@@ -1,0 +1,126 @@
+{
+  "name": "slotty-way.site",
+  "site_name": "slotty way Site Name",
+  "html_head": "",
+  "url": "slotty-way.site",
+  "template": "luxury-casino",
+  "language_code": "pl-PL",
+  "allow_indexing": true,
+  "redirect_404s_to_homepage": true,
+  "use_www_version": false,
+  "content": "<p>Nitro Casino to nowoczesna platforma hazardowa uruchomiona w 2020 roku przez BP Group Ltd., działająca pod licencją Malta Gaming Authority (MGA) o numerze MGA/B2C/203/2011. Operator stawia na tempo i prostotę obsługi, przez co NitroCasino zyska uznanie zwłaszcza u graczy ceniących dynamiczne i bezproblemowe wrażenia z gry.</p><p>Biblioteka tytułów jest imponująca — znajdziesz tu klasyczne automaty, sloty wideo z nowoczesnymi mechanikami, a także gry stołowe, takie jak blackjack, ruletka, poker i baccarat. NetEnt, Yggdrasil, NoLimit City, Pragmatic Play, Microgaming i BetSoft to tylko część dostawców obecnych w ofercie. Co więcej, większość tytułów można wypróbować w trybie demo przed grą na realne środki. Dla miłośników emocji na żywo kasyno Nitro oferuje szeroką sekcję live casino, gdzie doświadczeni krupierzy prowadzą rozgrywki w czasie rzeczywistym.</p><p>Pod względem bonusów gracze mogą liczyć na darmowe obroty, nagrody w cotygodniowych konkursach oraz regularne promocje dopasowane do stylu gry. Warunki każdej oferty są jasno opisane — znajdziesz wymogi obrotu, limity stawek bonusowych oraz terminy ważności promocji.</p><p>Jeśli chodzi o płatności, Nitro Casino Polska obsługuje szeroki wachlarz metod. Gracze mogą korzystać z kart Visa i Mastercard, e-portfeli takich jak Skrill i Neteller, a także z Klarna. Dostępne są też BLIK za pośrednictwem MiFinity, Jeton, EZeeWallet oraz kryptowaluty, w tym Bitcoin i Binance Pay. Wypłaty są zatwierdzane zazwyczaj w ciągu 72 godzin, choć w praktyce często odbywa się to znacznie szybciej.</p><p>Procedura Nitro Casino login jest prosta i szybka — wystarczy przeglądarka internetowa, bez konieczności pobierania dodatkowego oprogramowania. Interfejs płynnie dostosowuje się do ekranów iOS i Android, a kluczowe funkcje — rejestracja, depozyt, gra i wypłata — są dostępne bezpośrednio z poziomu mobilnej przeglądarki.</p>",
+  "pages": [],
+  "faq_schema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "hhhr?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "grriji!"
+        }
+      }
+    ]
+  },
+  "redirect_site": null,
+  "hero_title": "1",
+  "hero_subtitle": "2",
+  "hero_badge": "3",
+  "cta_text": "4",
+  "tagline": "5",
+  "features_list": "10",
+  "footer_text": "11",
+  "popup_text": "12",
+  "faq_title": "6",
+  "login_text": "Login",
+  "register_text": "Register",
+  "slots_title": "7",
+  "bonus_title": "8",
+  "get_bonus_btn_text": "9",
+  "redirect_link": null,
+  "subdomains": null,
+  "accent_color": "#d4af37",
+  "main_background": "#231782",
+  "secondary_background": "#506391",
+  "button_background": "#d8e24b",
+  "button_text_color": null,
+  "text_color": "#ffffff",
+  "color_highlight_text": "#f50000",
+  "color_main_btn_text": "#80cc6b",
+  "logo": {
+    "url": "/uploads/465f1b5c6047962ee75647f6e257795b.webp"
+  },
+  "popup_logo": {
+    "url": "/uploads/b5aa0f3cc3361859f03cfca4129eb402.jpg"
+  },
+  "main_background_img": {
+    "url": "/uploads/372d20245f7160ffdc3f6c8a9ff56a80.webp"
+  },
+  "header_menu": [
+    {
+      "link": "/play/",
+      "label": "Bonus",
+      "submenu": [],
+      "openInNewTab": false
+    },
+    {
+      "link": "/play/",
+      "label": "Slots",
+      "submenu": [],
+      "openInNewTab": false
+    },
+    {
+      "link": "/bonus/",
+      "label": "Games",
+      "submenu": [],
+      "openInNewTab": true
+    }
+  ],
+  "footer_menu": [
+    {
+      "link": "/play/",
+      "label": "FAQQQ",
+      "submenu": [
+        {
+          "link": "/play/",
+          "label": "1",
+          "openInNewTab": false
+        },
+        {
+          "link": "/faq2/",
+          "label": "2",
+          "openInNewTab": false
+        }
+      ],
+      "openInNewTab": false
+    }
+  ],
+  "Slots": [
+    {
+      "link": "/play/",
+      "logo": "/uploads/b5aa0f3cc3361859f03cfca4129eb402.jpg",
+      "name": "Slotname",
+      "Name": "Slotname"
+    }
+  ],
+  "Bonuses": [
+    {
+      "link": "/play/",
+      "logo": "",
+      "name": "100%",
+      "Name": "100%"
+    }
+  ],
+  "FAQ": [
+    {
+      "answer": "grriji!",
+      "question": "hhhr?"
+    }
+  ],
+  "_generated_at": "2026-05-19T12:13:19.797Z",
+  "_version": "1.0.0",
+  "_last_deploy": "2026-05-19T12:13:22.436Z",
+  "_deploy_trigger": "krhc7o"
+}
