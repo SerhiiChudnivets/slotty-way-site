@@ -109,8 +109,8 @@
     {
       "link": "/play/",
       "logo": "",
-      "name": "100%",
-      "Name": "100%"
+      "name": "200%",
+      "Name": "200%"
     }
   ],
   "FAQ": [
@@ -119,8 +119,8 @@
       "question": "hhhrs?"
     }
   ],
-  "_generated_at": "2026-05-19T13:05:21.490Z",
+  "_generated_at": "2026-05-19T13:24:56.591Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-19T13:05:27.845Z",
-  "_deploy_trigger": "7r8uj5"
+  "_last_deploy": "2026-05-19T13:24:57.151Z",
+  "_deploy_trigger": "m982k"
 }
