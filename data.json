@@ -101,8 +101,8 @@
     {
       "link": "/play/",
       "logo": "/uploads/b5aa0f3cc3361859f03cfca4129eb402.jpg",
-      "name": "Slotname",
-      "Name": "Slotname"
+      "name": "Slotnam",
+      "Name": "Slotnam"
     }
   ],
   "Bonuses": [
@@ -119,8 +119,8 @@
       "question": "hhhrs?"
     }
   ],
-  "_generated_at": "2026-05-19T13:24:56.591Z",
+  "_generated_at": "2026-05-19T18:39:05.774Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-19T13:24:57.151Z",
-  "_deploy_trigger": "m982k"
+  "_last_deploy": "2026-05-19T18:39:11.405Z",
+  "_deploy_trigger": "57d6pq"
 }
