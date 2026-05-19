@@ -16,7 +16,7 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "hhhrs?",
+        "name": "hrs?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "grriji!"
@@ -116,11 +116,11 @@
   "FAQ": [
     {
       "answer": "grriji!",
-      "question": "hhhrs?"
+      "question": "hrs?"
     }
   ],
-  "_generated_at": "2026-05-19T18:55:21.856Z",
+  "_generated_at": "2026-05-19T18:55:59.603Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-19T18:55:22.404Z",
-  "_deploy_trigger": "punlfk"
+  "_last_deploy": "2026-05-19T18:56:00.104Z",
+  "_deploy_trigger": "c5sm3"
 }
