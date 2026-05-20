@@ -3,7 +3,7 @@
   "site_name": "slotty way Site Name",
   "html_head": "",
   "url": "slotty-way.site",
-  "template": "luxury-casino",
+  "template": "tupchiy",
   "language_code": "pl-PL",
   "allow_indexing": true,
   "redirect_404s_to_homepage": true,
@@ -119,8 +119,8 @@
       "question": "hrs?"
     }
   ],
-  "_generated_at": "2026-05-19T19:00:33.990Z",
+  "_generated_at": "2026-05-20T06:23:36.084Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-19T19:00:38.880Z",
-  "_deploy_trigger": "kqqkeb"
+  "_last_deploy": "2026-05-20T06:23:36.627Z",
+  "_deploy_trigger": "lyuxap"
 }

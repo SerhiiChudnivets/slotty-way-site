@@ -70,25 +70,6 @@ const templates = {
 export default function DynamicPage({ page, site }: { page: PageData; site: SiteData }) {
   const siteName = site.site_name || site.name
 
-  useEffect(() => {
-    if (page.html_head && typeof document !== 'undefined') {
-      const temp = document.createElement('div');
-      temp.innerHTML = page.html_head;
-
-      Array.from(temp.children).forEach((child) => {
-        const clone = child.cloneNode(true) as HTMLElement;
-        clone.setAttribute('data-injected-from-strapi-page', 'true');
-        document.head.appendChild(clone);
-      });
-
-      return () => {
-        document.querySelectorAll('[data-injected-from-strapi-page="true"]').forEach((el) => {
-          el.remove();
-        });
-      };
-    }
-  }, [page.html_head]);
-
   const Template = (templates[page.template || 'default'] || templates.default) as React.ComponentType<{
     page: PageData
     site: SiteData
@@ -96,17 +77,6 @@ export default function DynamicPage({ page, site }: { page: PageData; site: Site
 
   return (
     <>
-      <Head>
-        <title>{page.seo_title || page.title} | {siteName}</title>
-        <meta name="description" content={page.seo_description || ''} />
-        <meta name="robots" content={site.allow_indexing ? 'index,follow' : 'noindex,nofollow'} />
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-      </Head>
-
       <Template page={page} site={site} />
     </>
   )
@@ -115,7 +85,7 @@ export default function DynamicPage({ page, site }: { page: PageData; site: Site
 export const getStaticPaths: GetStaticPaths = async () => {
   const dataPath = path.join(process.cwd(), 'data.json')
   const data: SiteData = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
-
+  
   const paths = data.pages?.map(page => ({
     params: { slug: page.slug }
   })) || []
@@ -129,7 +99,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const dataPath = path.join(process.cwd(), 'data.json')
   const data: SiteData = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
-
+  
   const page = data.pages?.find(p => p.slug === params?.slug)
 
   if (!page) {
