@@ -1,14 +1,14 @@
 {
   "name": "slotty-way.site",
-  "site_name": "slotty way Site Name",
+  "site_name": "Slottyway Casino ™ – Oficjalna Strona w Polsce",
   "html_head": "",
   "url": "slotty-way.site",
   "template": "tupchiy",
   "language_code": "pl-PL",
-  "allow_indexing": true,
+  "allow_indexing": false,
   "redirect_404s_to_homepage": true,
   "use_www_version": false,
-  "content": "<p>Nitro Casino to nowoczesna platforma hazardowa uruchomiona w 2020 roku przez BP Group Ltd., działająca pod licencją Malta Gaming Authority (MGA) o numerze MGA/B2C/203/2011. Operator stawia na tempo i prostotę obsługi, przez co NitroCasino zyska uznanie zwłaszcza u graczy ceniących dynamiczne i bezproblemowe wrażenia z gry.</p><p>Biblioteka tytułów jest imponująca — znajdziesz tu klasyczne automaty, sloty wideo z nowoczesnymi mechanikami, a także gry stołowe, takie jak blackjack, ruletka, poker i baccarat. NetEnt, Yggdrasil, NoLimit City, Pragmatic Play, Microgaming i BetSoft to tylko część dostawców obecnych w ofercie. Co więcej, większość tytułów można wypróbować w trybie demo przed grą na realne środki. Dla miłośników emocji na żywo kasyno Nitro oferuje szeroką sekcję live casino, gdzie doświadczeni krupierzy prowadzą rozgrywki w czasie rzeczywistym.</p><p>Pod względem bonusów gracze mogą liczyć na darmowe obroty, nagrody w cotygodniowych konkursach oraz regularne promocje dopasowane do stylu gry. Warunki każdej oferty są jasno opisane — znajdziesz wymogi obrotu, limity stawek bonusowych oraz terminy ważności promocji.</p><p>Jeśli chodzi o płatności, Nitro Casino Polska obsługuje szeroki wachlarz metod. Gracze mogą korzystać z kart Visa i Mastercard, e-portfeli takich jak Skrill i Neteller, a także z Klarna. Dostępne są też BLIK za pośrednictwem MiFinity, Jeton, EZeeWallet oraz kryptowaluty, w tym Bitcoin i Binance Pay. Wypłaty są zatwierdzane zazwyczaj w ciągu 72 godzin, choć w praktyce często odbywa się to znacznie szybciej.</p><p>Procedura Nitro Casino login jest prosta i szybka — wystarczy przeglądarka internetowa, bez konieczności pobierania dodatkowego oprogramowania. Interfejs płynnie dostosowuje się do ekranów iOS i Android, a kluczowe funkcje — rejestracja, depozyt, gra i wypłata — są dostępne bezpośrednio z poziomu mobilnej przeglądarki.</p>",
+  "content": "<p>Slottyway Casino to nowoczesna platforma hazardowa uruchomiona w 2020 roku przez BP Group Ltd., działająca pod licencją Malta Gaming Authority (MGA) o numerze MGA/B2C/203/2011. Operator stawia na tempo i prostotę obsługi, przez co NitroCasino zyska uznanie zwłaszcza u graczy ceniących dynamiczne i bezproblemowe wrażenia z gry.</p><p>Biblioteka tytułów jest imponująca — znajdziesz tu klasyczne automaty, sloty wideo z nowoczesnymi mechanikami, a także gry stołowe, takie jak blackjack, ruletka, poker i baccarat. NetEnt, Yggdrasil, NoLimit City, Pragmatic Play, Microgaming i BetSoft to tylko część dostawców obecnych w ofercie. Co więcej, większość tytułów można wypróbować w trybie demo przed grą na realne środki. Dla miłośników emocji na żywo kasyno Slottyway oferuje szeroką sekcję live casino, gdzie doświadczeni krupierzy prowadzą rozgrywki w czasie rzeczywistym.</p><p>Pod względem bonusów gracze mogą liczyć na darmowe obroty, nagrody w cotygodniowych konkursach oraz regularne promocje dopasowane do stylu gry. Warunki każdej oferty są jasno opisane — znajdziesz wymogi obrotu, limity stawek bonusowych oraz terminy ważności promocji.</p><p>Jeśli chodzi o płatności, Slottyway Casino obsługuje szeroki wachlarz metod. Gracze mogą korzystać z kart Visa i Mastercard, e-portfeli takich jak Skrill i Neteller, a także z Klarna. Dostępne są też BLIK za pośrednictwem MiFinity, Jeton, EZeeWallet oraz kryptowaluty, w tym Bitcoin i Binance Pay. Wypłaty są zatwierdzane zazwyczaj w ciągu 72 godzin, choć w praktyce często odbywa się to znacznie szybciej.</p><p>Procedura Slottyway kasyno login jest prosta i szybka — wystarczy przeglądarka internetowa, bez konieczności pobierania dodatkowego oprogramowania. Interfejs płynnie dostosowuje się do ekranów iOS i Android, a kluczowe funkcje — rejestracja, depozyt, gra i wypłata — są dostępne bezpośrednio z poziomu mobilnej przeglądarki.</p>",
   "pages": [],
   "faq_schema": {
     "@context": "https://schema.org",
@@ -16,47 +16,71 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "hrs?",
+        "name": " Jakie gry są dostępne w Slottyway Casino?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "grriji!"
+          "text": "Slottyway Casino oferuje szeroki wybór gier kasynowych, w tym automaty online, gry z krupierem na żywo oraz klasyczne gry stołowe, takie jak blackjack, ruletka i baccarat. Ponadto platforma udostępnia gry z jackpotami, video pokera oraz gry specjalne, które zapewniają różnorodne doświadczenia dla wszystkich graczy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie są wymagania dotyczące obrotu dla bonusów?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wymagania dotyczące obrotu różnią się w zależności od bonusu. Większość bonusów depozytowych wymaga obrotu 35-krotności kwoty bonusu, chyba że podano inaczej. Wygrane z darmowych spinów również mogą podlegać określonym wymaganiom obrotu. Zalecamy zawsze sprawdzenie regulaminu promocji przed jej aktywacją."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": " Jakie waluty są akceptowane w Slottyway Casino?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Slottyway Casino obsługuje wiele walut, aby ułatwić wpłaty i wypłaty graczom z różnych krajów. Polscy gracze mogą korzystać z euro (EUR) oraz dolarów amerykańskich (USD). Niektóre metody płatności mogą umożliwiać wpłaty w złotych polskich (PLN), ale mogą być przeliczane na inne waluty."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy mogę używać kryptowalut w Slottyway Casino?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, Slottyway Casino akceptuje Bitcoin, Ethereum i Litecoin do wpłat i wypłat. Transakcje kryptowalutowe są szybkie, bezpieczne i zapewniają większą anonimowość w porównaniu z tradycyjnymi metodami płatności. Dodatkowo, dla użytkowników kryptowalut mogą być dostępne specjalne bonusy."
         }
       }
     ]
   },
   "redirect_site": null,
-  "hero_title": "1",
-  "hero_subtitle": "2",
-  "hero_badge": "3",
-  "cta_text": "4",
-  "tagline": "5",
-  "features_list": "10",
-  "footer_text": "11",
-  "popup_text": "12",
-  "faq_title": "6",
-  "login_text": "Login",
-  "register_text": "Register",
-  "slots_title": "7",
-  "bonus_title": "8",
-  "get_bonus_btn_text": "9",
-  "redirect_link": null,
+  "hero_title": "Slottyway Casino",
+  "hero_subtitle": "Bonus Powitalny w kasynie",
+  "hero_badge": "Najlepsze Kasyno Online: Bonus Powitalny, Turnieje VIP i Płatności w Złotych",
+  "cta_text": "Odbierz",
+  "tagline": "Bonus 200% do pierwszego depozytu",
+  "features_list": "Features List???",
+  "footer_text": "© 2026 Slottyway Casino. Wszelkie prawa zastrzeżone.",
+  "popup_text": "Bonus do 6000 zł + 250 FS",
+  "faq_title": "FAQ",
+  "login_text": "Zaloguj się",
+  "register_text": "Zarejestruj się",
+  "slots_title": "Gry dostępne w Slottyway Kasyno",
+  "bonus_title": "Slottyway bonusy i promocje",
+  "get_bonus_btn_text": "Odbierz bonus",
+  "redirect_link": "/play/",
   "subdomains": null,
   "accent_color": "#d4af37",
-  "main_background": "#231782",
-  "secondary_background": "#506391",
-  "button_background": "#d8e24b",
+  "main_background": "#0d1016",
+  "secondary_background": "#000000",
+  "button_background": "#fe4e51",
   "button_text_color": null,
   "text_color": "#ffffff",
-  "color_highlight_text": "#f50000",
-  "color_main_btn_text": "#80cc6b",
+  "color_highlight_text": "#00cfa6",
+  "color_main_btn_text": "#2d9ce1",
   "logo": {
-    "url": "/uploads/3f890ee6d96c8f0550ba88fc2b4a4cde.webp"
+    "url": "/uploads/8c18321862657781590b0746ddc7a260.webp"
   },
   "popup_logo": {
-    "url": "/uploads/b700d8e54261271ceb95b811bdea8249.jpg"
+    "url": "/uploads/8c18321862657781590b0746ddc7a260.webp"
   },
   "main_background_img": {
-    "url": "/uploads/446c16f3377e6d44d67b87287c1c584d.webp"
+    "url": "/uploads/e17574bda4c1bdcf2a8816f8db910364.webp"
   },
   "header_menu": [
     {
@@ -100,27 +124,75 @@
   "Slots": [
     {
       "link": "/play/",
-      "logo": "/uploads/b5aa0f3cc3361859f03cfca4129eb402.jpg",
-      "name": "Slotnam",
-      "Name": "Slotnam"
+      "logo": "/uploads/7f309e4bd8364293b39892b0ab560ff8.webp",
+      "name": "Sweet Bonanza Dice",
+      "Name": "Sweet Bonanza Dice"
+    },
+    {
+      "link": "/play/",
+      "logo": "/uploads/dffb88a97c98bd864a4e5286f7df7954.webp",
+      "name": "Sugar Rush 1000",
+      "Name": "Sugar Rush 1000"
+    },
+    {
+      "link": "/play/",
+      "logo": "/uploads/4f9ceb4e69160e7efd56c7573c76cc93.webp",
+      "name": "Big Bass Splash",
+      "Name": "Big Bass Splash"
+    },
+    {
+      "link": "/play/",
+      "logo": "/uploads/ef1c268a1cfc04ac79c45cf3a2ae8281.webp",
+      "name": "Aviator",
+      "Name": "Aviator"
     }
   ],
   "Bonuses": [
     {
       "link": "/play/",
-      "logo": "",
-      "name": "200%",
-      "Name": "200%"
+      "logo": "/uploads/98bf63a0b9ca0cf1c87286905ea2b555.webp",
+      "name": "Witamy Rekin - 240% Do 2500€",
+      "Name": "Witamy Rekin - 240% Do 2500€"
+    },
+    {
+      "link": "/play/",
+      "logo": "/uploads/0daf49de2f2c8cf81e367d13de4278e1.webp",
+      "name": "Bonus Szalonej Środy - 40% Do 250€",
+      "Name": "Bonus Szalonej Środy - 40% Do 250€"
+    },
+    {
+      "link": "/play/",
+      "logo": "/uploads/26ba75affd98c8e69e065490e0508600.webp",
+      "name": "Cyber Doładowanie - 50% Do 300€",
+      "Name": "Cyber Doładowanie - 50% Do 300€"
+    },
+    {
+      "link": "/play/",
+      "logo": "/uploads/e27913ef5242da387bfb6e682202a938.webp",
+      "name": "Pływający Cashback - 20% Do 300€",
+      "Name": "Pływający Cashback - 20% Do 300€"
     }
   ],
   "FAQ": [
     {
-      "answer": "grriji!",
-      "question": "hrs?"
+      "answer": "Slottyway Casino oferuje szeroki wybór gier kasynowych, w tym automaty online, gry z krupierem na żywo oraz klasyczne gry stołowe, takie jak blackjack, ruletka i baccarat. Ponadto platforma udostępnia gry z jackpotami, video pokera oraz gry specjalne, które zapewniają różnorodne doświadczenia dla wszystkich graczy.",
+      "question": " Jakie gry są dostępne w Slottyway Casino?"
+    },
+    {
+      "answer": "Wymagania dotyczące obrotu różnią się w zależności od bonusu. Większość bonusów depozytowych wymaga obrotu 35-krotności kwoty bonusu, chyba że podano inaczej. Wygrane z darmowych spinów również mogą podlegać określonym wymaganiom obrotu. Zalecamy zawsze sprawdzenie regulaminu promocji przed jej aktywacją.",
+      "question": "Jakie są wymagania dotyczące obrotu dla bonusów?"
+    },
+    {
+      "answer": "Slottyway Casino obsługuje wiele walut, aby ułatwić wpłaty i wypłaty graczom z różnych krajów. Polscy gracze mogą korzystać z euro (EUR) oraz dolarów amerykańskich (USD). Niektóre metody płatności mogą umożliwiać wpłaty w złotych polskich (PLN), ale mogą być przeliczane na inne waluty.",
+      "question": " Jakie waluty są akceptowane w Slottyway Casino?"
+    },
+    {
+      "answer": "Tak, Slottyway Casino akceptuje Bitcoin, Ethereum i Litecoin do wpłat i wypłat. Transakcje kryptowalutowe są szybkie, bezpieczne i zapewniają większą anonimowość w porównaniu z tradycyjnymi metodami płatności. Dodatkowo, dla użytkowników kryptowalut mogą być dostępne specjalne bonusy.",
+      "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-20T11:36:26.215Z",
+  "_generated_at": "2026-05-20T15:15:58.868Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-20T11:36:26.748Z",
-  "_deploy_trigger": "rq0asd"
+  "_last_deploy": "2026-05-20T15:15:59.634Z",
+  "_deploy_trigger": "n6g5vr"
 }
