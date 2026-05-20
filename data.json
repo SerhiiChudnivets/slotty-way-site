@@ -50,13 +50,13 @@
   "color_highlight_text": "#f50000",
   "color_main_btn_text": "#80cc6b",
   "logo": {
-    "url": "/uploads/465f1b5c6047962ee75647f6e257795b.webp"
+    "url": "/uploads/3f890ee6d96c8f0550ba88fc2b4a4cde.webp"
   },
   "popup_logo": {
-    "url": "/uploads/b5aa0f3cc3361859f03cfca4129eb402.jpg"
+    "url": "/uploads/b700d8e54261271ceb95b811bdea8249.jpg"
   },
   "main_background_img": {
-    "url": "/uploads/372d20245f7160ffdc3f6c8a9ff56a80.webp"
+    "url": "/uploads/446c16f3377e6d44d67b87287c1c584d.webp"
   },
   "header_menu": [
     {
@@ -119,8 +119,8 @@
       "question": "hrs?"
     }
   ],
-  "_generated_at": "2026-05-20T10:55:06.892Z",
+  "_generated_at": "2026-05-20T11:36:26.215Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-20T10:55:07.514Z",
-  "_deploy_trigger": "uoyzrv"
+  "_last_deploy": "2026-05-20T11:36:26.748Z",
+  "_deploy_trigger": "rq0asd"
 }
