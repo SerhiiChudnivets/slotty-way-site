@@ -3,7 +3,7 @@
   "site_name": "Slottyway Casino ™ – Oficjalna Strona w Polsce",
   "html_head": "",
   "url": "slotty-way.site",
-  "template": "tupchiy",
+  "template": "modern-casino",
   "language_code": "pl-PL",
   "allow_indexing": false,
   "redirect_404s_to_homepage": true,
@@ -69,7 +69,7 @@
   "main_background": "#0d1016",
   "secondary_background": "#000000",
   "button_background": "#fe4e51",
-  "button_text_color": null,
+  "button_text_color": "#000000",
   "text_color": "#ffffff",
   "color_highlight_text": "#00cfa6",
   "color_main_btn_text": "#2d9ce1",
@@ -191,8 +191,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-20T15:15:58.868Z",
+  "_generated_at": "2026-05-21T09:15:14.838Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-20T15:15:59.634Z",
-  "_deploy_trigger": "n6g5vr"
+  "_last_deploy": "2026-05-21T09:15:15.431Z",
+  "_deploy_trigger": "jgzk1r"
 }
