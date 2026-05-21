@@ -48,6 +48,7 @@
       }
     ]
   },
+  "seo_description": null,
   "redirect_site": null,
   "hero_title": "Slottyway Casino",
   "hero_subtitle": "Bonus Powitalny w kasynie",
@@ -73,6 +74,7 @@
   "text_color": "#ffffff",
   "color_highlight_text": "#00cfa6",
   "color_main_btn_text": "#2d9ce1",
+  "cta_background": null,
   "logo": {
     "url": "/uploads/8c18321862657781590b0746ddc7a260.webp"
   },
@@ -98,7 +100,18 @@
     {
       "link": "/bonus/",
       "label": "Games",
-      "submenu": [],
+      "submenu": [
+        {
+          "link": "/play/",
+          "label": "slots",
+          "openInNewTab": false
+        },
+        {
+          "link": "/play/",
+          "label": "live casino",
+          "openInNewTab": false
+        }
+      ],
       "openInNewTab": true
     }
   ],
@@ -191,8 +204,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-21T10:46:05.953Z",
+  "_generated_at": "2026-05-21T12:30:31.905Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-21T10:46:06.535Z",
-  "_deploy_trigger": "4dx85n"
+  "_last_deploy": "2026-05-21T12:30:32.485Z",
+  "_deploy_trigger": "x3gnf"
 }
