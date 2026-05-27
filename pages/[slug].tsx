@@ -87,7 +87,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const data: SiteData = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
   
   const paths = data.pages?.map(page => ({
-    params: { slug: page.slug }
+    params: { slug: page.slug.replace(/^\/|\/$/g, '') }
   })) || []
 
   return {
@@ -100,7 +100,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const dataPath = path.join(process.cwd(), 'data.json')
   const data: SiteData = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
   
-  const page = data.pages?.find(p => p.slug === params?.slug)
+  const slugParam = (params?.slug as string || '').replace(/^\/|\/$/g, '')
+  const page = data.pages?.find(p => p.slug.replace(/^\/|\/$/g, '') === slugParam)
 
   if (!page) {
     return {
