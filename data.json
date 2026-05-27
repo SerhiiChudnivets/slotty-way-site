@@ -3,13 +3,46 @@
   "site_name": "Slottyway Casino ™ – Oficjalna Strona w Polsce",
   "html_head": "",
   "url": "slotty-way.site",
-  "template": "modern-casino",
+  "template": "tupchiy",
   "language_code": "pl-PL",
   "allow_indexing": false,
   "redirect_404s_to_homepage": true,
   "use_www_version": false,
   "content": "<p>Slottyway Casino to nowoczesna platforma hazardowa uruchomiona w 2020 roku przez BP Group Ltd., działająca pod licencją Malta Gaming Authority (MGA) o numerze MGA/B2C/203/2011. Operator stawia na tempo i prostotę obsługi, przez co NitroCasino zyska uznanie zwłaszcza u graczy ceniących dynamiczne i bezproblemowe wrażenia z gry.</p><p>Biblioteka tytułów jest imponująca — znajdziesz tu klasyczne automaty, sloty wideo z nowoczesnymi mechanikami, a także gry stołowe, takie jak blackjack, ruletka, poker i baccarat. NetEnt, Yggdrasil, NoLimit City, Pragmatic Play, Microgaming i BetSoft to tylko część dostawców obecnych w ofercie. Co więcej, większość tytułów można wypróbować w trybie demo przed grą na realne środki. Dla miłośników emocji na żywo kasyno Slottyway oferuje szeroką sekcję live casino, gdzie doświadczeni krupierzy prowadzą rozgrywki w czasie rzeczywistym.</p><p>Pod względem bonusów gracze mogą liczyć na darmowe obroty, nagrody w cotygodniowych konkursach oraz regularne promocje dopasowane do stylu gry. Warunki każdej oferty są jasno opisane — znajdziesz wymogi obrotu, limity stawek bonusowych oraz terminy ważności promocji.</p><p>Jeśli chodzi o płatności, Slottyway Casino obsługuje szeroki wachlarz metod. Gracze mogą korzystać z kart Visa i Mastercard, e-portfeli takich jak Skrill i Neteller, a także z Klarna. Dostępne są też BLIK za pośrednictwem MiFinity, Jeton, EZeeWallet oraz kryptowaluty, w tym Bitcoin i Binance Pay. Wypłaty są zatwierdzane zazwyczaj w ciągu 72 godzin, choć w praktyce często odbywa się to znacznie szybciej.</p><p>Procedura Slottyway kasyno login jest prosta i szybka — wystarczy przeglądarka internetowa, bez konieczności pobierania dodatkowego oprogramowania. Interfejs płynnie dostosowuje się do ekranów iOS i Android, a kluczowe funkcje — rejestracja, depozyt, gra i wypłata — są dostępne bezpośrednio z poziomu mobilnej przeglądarki.</p>",
-  "pages": [],
+  "pages": [
+    {
+      "id": 25,
+      "title": "slotty-way.site Bonus",
+      "slug": "bonus/",
+      "content": "<h1>Bonusy w Slottyway Casino</h1><p>Slottyway Casino stara się stworzyć użytkownikom jak najbardziej komfortowe warunki do uprawiania hazardu. Na stronie na graczy czekają nie tylko automaty z wysokim RTP. Jednak gracze czekają nie tylko na certyfikowane automaty, ale także na różnorodne bonusy. Polityka bonusowa ma na celu nagradzanie stałych użytkowników i nowicjuszy. Slottyway Casino bonus pozwala zwiększyć rozmiar istniejącego bankrolla.</p><h2>Bonus powitalny</h2><p>Otrzymać swój pierwszy bonus w naszym kasynie gracze mogą już przy rejestracji i pierwszej wpłaty. Nowi gracze otrzymują zachętę w wysokości 100% depozytu do 200 euro. Aby go otrzymać, należy się zarejestrować i dokonać wpłaty w wysokości co najmniej 20 euro. Zachęta przyznawana jest w ratach po 10% aktywowanej kwoty. W promocji obowiązuje zasada obrotu ze współczynnikiem x30, za każde 300 euro zakładów zostanie przyznany prezent w wysokości 10 euro. Okres ważności promocji wynosi 3 dni. Kwota jednego zakładu nie jest ograniczona warunkami promocji.</p><h2>Bonus doładowania</h2><p>Po prezencie powitalnym gracze mogą skorzystać z bonusu doładowania. Jest on oferowany w wysokości 50% depozytu do 100 €. Po rozpoczęciu procesu obstawiania bonus zostanie przelany na konto gracza w ratach wynoszących 10%. Aby otrzymać prezent, należy dokonać wpłaty w wysokości co najmniej 20 euro. Promocja jest ważna przez 3 dni. Bonus reload 50% jest dostępny dla zarejestrowanych graczy co tydzień, począwszy od poniedziałku. Użytkownicy mogą aktywować nagrodę raz w tygodniu.</p><h2>Bonus kryptowalutowy</h2><p>Gracze w Slottyway Casino są zachęcani do korzystania nie tylko ze standardowych systemów płatności, ale także z kryptowalut. Użytkownicy, którzy dokonują transakcji za ich pośrednictwem, mają prawo do specjalnego prezentu - Crypto Bonus za obrót 150 do 100 euro. Promocja ma wymagania dotyczące zakładów z zakładem x30. Na przykład, aby otrzymać bonus, gracz wpłacił równowartość 20 euro. Na jego konto bonusowe wpłynęło 30 euro. W tym przypadku całkowita kwota obrotu wyniesie 900 euro. Po dokonaniu zakładów w wysokości 90 euro na jego konto główne zostanie przelane 10% prezentu (czyli 3 euro).</p><h2>Rakeback z BeeCoins</h2><p>Nasze kasyno posiada system rakeback. Zgodnie z jego warunkami, BeeCoins (punkty programu lojalnościowego) są przyznawane za obroty w grach. Tak więc za obrót w wysokości 100 euro przyznawanych jest 15 BeeCoins. Liczba punktów zależy również od wybranej gry:</p><ul><li><p>za zakłady na automatach przysługuje 100% bonusu, czyli za obrót 100 euro przyznawanych jest 15 BeeCoinów;</p></li><li><p>za zakłady w bakaracie i blackjacku przysługuje 10%;</p></li><li><p>za zakłady w grach z krupierem na żywo - 50% obrotu.</p></li></ul><p></p>",
+      "seoTitle": "Slottyway Casino - Bonus [PL] | Slottyway",
+      "seoDescription": "Slottyway Casino dąży do stworzenia najbardziej komfortowego środowiska hazardowego dla użytkowników i pozwala zwiększyć rozmiar dostępnego bankrolla.",
+      "htmlHead": "333",
+      "gptPrompt": "",
+      "heroTitle": "111",
+      "heroSubtitle": "222",
+      "heroImage": "/uploads/e17574bda4c1bdcf2a8816f8db910364.webp",
+      "template": "landing",
+      "isHomepage": false,
+      "order": 0,
+      "lang": "pl-PL",
+      "faqTitle": "",
+      "sections": 4444,
+      "faq": [
+        {
+          "answer": "rfhrshsrh",
+          "question": "grgg"
+        },
+        {
+          "answer": "edgdg",
+          "question": "hbrshgs"
+        }
+      ],
+      "websiteId": 108,
+      "createdAt": {},
+      "updatedAt": {}
+    }
+  ],
   "faq_schema": {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -48,7 +81,7 @@
       }
     ]
   },
-  "seo_description": null,
+  "seo_description": "Odkryj Slottyway – najlepsze sloty, gry stołowe i kasyno na żywo w jednym miejscu. Slottyway bonus powitalny czeka od pierwszego depozytu. Dołącz teraz!",
   "redirect_site": null,
   "hero_title": "Slottyway Casino",
   "hero_subtitle": "Bonus Powitalny w kasynie",
@@ -65,7 +98,7 @@
   "bonus_title": "Slottyway bonusy i promocje",
   "get_bonus_btn_text": "Odbierz bonus",
   "redirect_link": "",
-  "subdomains": null,
+  "subdomains": "pl",
   "accent_color": "#d4af37",
   "main_background": "#0d1016",
   "secondary_background": "#000000",
@@ -86,10 +119,10 @@
   },
   "header_menu": [
     {
-      "link": "/play/",
+      "link": "/bonus/",
       "label": "Bonus",
       "submenu": [],
-      "openInNewTab": false
+      "openInNewTab": true
     },
     {
       "link": "/play/",
@@ -98,26 +131,15 @@
       "openInNewTab": false
     },
     {
-      "link": "/bonus/",
+      "link": "/play/",
       "label": "Games",
-      "submenu": [
-        {
-          "link": "/play/",
-          "label": "slots",
-          "openInNewTab": false
-        },
-        {
-          "link": "/play/",
-          "label": "live casino",
-          "openInNewTab": false
-        }
-      ],
-      "openInNewTab": true
+      "submenu": [],
+      "openInNewTab": false
     }
   ],
   "footer_menu": [
     {
-      "link": "/play/",
+      "link": "",
       "label": "FAQQQ",
       "submenu": [
         {
@@ -126,7 +148,7 @@
           "openInNewTab": false
         },
         {
-          "link": "/faq2/",
+          "link": "/play/",
           "label": "2",
           "openInNewTab": false
         }
@@ -204,8 +226,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-21T12:30:31.905Z",
+  "_generated_at": "2026-05-27T09:56:28.059Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-21T12:30:32.485Z",
-  "_deploy_trigger": "x3gnf"
+  "_last_deploy": "2026-05-27T09:56:28.615Z",
+  "_deploy_trigger": "f90epj"
 }
