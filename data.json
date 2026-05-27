@@ -154,6 +154,18 @@
         }
       ],
       "openInNewTab": false
+    },
+    {
+      "link": "https://slotty-way.site/",
+      "label": "lalala",
+      "submenu": [],
+      "openInNewTab": true
+    },
+    {
+      "link": "/play/",
+      "label": "bebebe",
+      "submenu": [],
+      "openInNewTab": false
     }
   ],
   "Slots": [
@@ -226,8 +238,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-27T11:27:41.911Z",
+  "_generated_at": "2026-05-27T11:56:04.877Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-27T11:27:43.619Z",
-  "_deploy_trigger": "gmxiva"
+  "_last_deploy": "2026-05-27T11:56:05.418Z",
+  "_deploy_trigger": "0zafz4"
 }
