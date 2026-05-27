@@ -106,7 +106,7 @@
   "button_text_color": "#000000",
   "text_color": "#ffffff",
   "color_highlight_text": "#00cfa6",
-  "color_main_btn_text": "#2d9ce1",
+  "color_main_btn_text": "#000000",
   "cta_background": null,
   "logo": {
     "url": "/uploads/8c18321862657781590b0746ddc7a260.webp"
@@ -226,8 +226,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-27T10:55:03.267Z",
+  "_generated_at": "2026-05-27T10:57:30.562Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-27T10:55:03.865Z",
-  "_deploy_trigger": "auehq4"
+  "_last_deploy": "2026-05-27T10:57:31.145Z",
+  "_deploy_trigger": "v2ezoe"
 }
