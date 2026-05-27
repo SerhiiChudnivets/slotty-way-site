@@ -165,9 +165,9 @@ const styles = `
     position: sticky;
     top: 0;
     z-index: 50;
-    background: hsla(var(--card), 0.95);
+    background: var(--secondary);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
+   
   }
 
   .header-content {
@@ -239,9 +239,13 @@ const styles = `
   }
 
   /* Navigation Styles */
-  .nav-bar {
-    background: var(--secondary);
-    border-bottom: 1px solid var(--border);
+  .nav-content{
+    border-top: 1px solid var(--border);
+   
+  }
+  
+  .nav-content li{
+    list-style-type: none;
   }
 
   .nav-content {
@@ -546,11 +550,14 @@ const styles = `
   }
 
   .bonus-card {
-    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-radius: 0.75rem;
     overflow: hidden;
     border: 1px solid var(--border);
     transition: all 0.3s;
+    background: var(--background);
   }
   .bonus-card img{
     max-width: 100%;
@@ -579,8 +586,12 @@ const styles = `
 
   .bonus-content {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     text-align: center;
     background: var(--background);
+    border-radius: 0 0 0.75rem 0.75rem;
   }
 
   .bonus-name {
@@ -595,6 +606,11 @@ const styles = `
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
+  }
+
+  .bonus-content .btn {
+    margin-top: auto;
+    border-radius: 0.5rem;
   }
 
   /* Custom Content Section */
@@ -644,6 +660,51 @@ const styles = `
     padding-left: 2rem;
     color: var(--muted-foreground);
   }
+
+  .content-wrapper table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+    background: var(--background);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .content-wrapper thead th {
+    background: var(--secondary);
+    color: var(--primary);
+    text-align: left;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 1rem;
+  }
+
+  .content-wrapper tbody td {
+    color: var(--muted-foreground);
+    font-size: 1.05rem;
+    line-height: 1.45;
+    padding: 0.95rem 1rem;
+    vertical-align: top;
+    transition: background-color 0.2s ease;
+  }
+
+  .content-wrapper thead tr {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .content-wrapper tbody tr:not(:last-child) td {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .content-wrapper tbody tr:hover td {
+    background: var(--secondary);
+    box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.06);
+    color: var(--foreground);
+  }
+
+ 
 
   .content-wrapper li {
     margin-bottom: 0.5rem;
@@ -736,7 +797,7 @@ const styles = `
 
   /* Footer */
   footer {
-    background: var(--card);
+    background: var(--secondary);
     border-top: 1px solid var(--border);
     padding: 2rem 0 7rem 0;
   }
@@ -797,6 +858,48 @@ const styles = `
   }
 
   .footer-link:hover {
+    color: var(--primary);
+  }
+  
+  .footer-menu-item {
+    position: relative;
+    list-style-type: none;
+  }
+
+  .footer-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--secondary);
+    
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 160px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .footer-menu-item:hover .footer-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .footer-submenu a {
+    display: block;
+    color: var(--muted-foreground);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+    white-space: nowrap;
+  }
+
+  .footer-submenu a:hover {
+    background: var(--accent);
     color: var(--primary);
   }
 
@@ -923,6 +1026,16 @@ const styles = `
     .bonuses-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+    .bonus-card {
+      min-height: 220px;
+      border-radius: 0.75rem;
+    }
+    .bonus-header {
+      border-radius: 0.75rem 0.75rem 0 0;
+    }
+    .bonus-content {
+      border-radius: 0 0 0.75rem 0.75rem;
+    }
     .popup-content{
       padding: 1rem 0;
     }
@@ -936,12 +1049,12 @@ const styles = `
       font-size: 0.75rem;
     } 
     
-      table {
+      .content-wrapper table {
     overflow-x: auto;
     white-space: nowrap;
     display: block;
   }
-  td {
+  .content-wrapper td, .content-wrapper th {
     width: 1%;
   }
 
@@ -1047,7 +1160,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
       --secondary: ${secondaryBackground};
       --muted: ${mainBackground};
       --muted-foreground: ${textColor}cc; /* with opacity */
-      --border: ${secondaryBackground}33; /* with opacity */
+      --border: ${colorHighlightText}33; /* with opacity */
       --radius: 0.5rem;
       --button-bg: ${buttonBackground};
       --button-text: ${buttonText};
@@ -1127,18 +1240,14 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
             </div>
           </div>
         </div>
-      </header>
-
-
-      {/* Navigation */}
-      <nav className="nav-bar">
+        <nav className="nav-bar">
         <div className="container">
           <ul className="nav-content">
             {data.header_menu && data.header_menu.length > 0 ? (
                 data.header_menu.map((item, index) => (
                     <li key={item.id || index} className="menu-item">
                       <a
-                          href={redirectLink ? redirectLink : item.url}
+                          href={item.link && item.link.trim() ? item.link : redirectLink}
                           className="nav-link"
                           target={item.open_in_new_tab ? '_blank' : '_self'}
                           rel={item.open_in_new_tab ? 'noopener noreferrer' : undefined}
@@ -1153,7 +1262,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                             {item.submenu.map((subitem, subindex) => (
                                 <a
                                     key={subitem.id || subindex}
-                                    href={redirectLink ? redirectLink : subitem.url}
+                                    href={subitem.link && subitem.link.trim() ? subitem.link : redirectLink}
                                     target={subitem.open_in_new_tab ? '_blank' : '_self'}
                                     rel={subitem.open_in_new_tab ? 'noopener noreferrer' : undefined}
                                 >
@@ -1173,7 +1282,8 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
             )}
           </ul>
         </div>
-      </nav>
+        </nav>
+      </header>
 
       {/* Hero Banner */}
       <section
@@ -1310,15 +1420,30 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
               <div className="footer-links">
                 {data.footer_menu && data.footer_menu.length > 0 && (
                     data.footer_menu.map((item, index) => (
-                        <a
-                            key={item.id || index}
-                            href={item.url}
-                            className="footer-link"
-                            target={item.open_in_new_tab ? '_blank' : '_self'}
-                            rel={item.open_in_new_tab ? 'noopener noreferrer' : undefined}
-                        >
-                          {item.label}
-                        </a>
+                        <div key={item.id || index} className="footer-menu-item">
+                          <a
+                              href={item.link && item.link.trim() ? item.link : redirectLink}
+                              className="footer-link"
+                              target={(item.open_in_new_tab || item.openInNewTab) ? '_blank' : '_self'}
+                              rel={(item.open_in_new_tab || item.openInNewTab) ? 'noopener noreferrer' : undefined}
+                          >
+                            {item.label}
+                          </a>
+                          {item.submenu && item.submenu.length > 0 && (
+                              <div className="footer-submenu">
+                                {item.submenu.map((subitem, subindex) => (
+                                    <a
+                                        key={subitem.id || subindex}
+                                        href={subitem.link && subitem.link.trim() ? subitem.link : redirectLink}
+                                        target={(subitem.open_in_new_tab || subitem.openInNewTab) ? '_blank' : '_self'}
+                                        rel={(subitem.open_in_new_tab || subitem.openInNewTab) ? 'noopener noreferrer' : undefined}
+                                    >
+                                      {subitem.label}
+                                    </a>
+                                ))}
+                              </div>
+                          )}
+                        </div>
                     ))
                 )}
               </div>
