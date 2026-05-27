@@ -151,6 +151,26 @@
           "link": "/play/",
           "label": "2",
           "openInNewTab": false
+        },
+        {
+          "link": "",
+          "label": "3",
+          "openInNewTab": false
+        },
+        {
+          "link": "",
+          "label": "3",
+          "openInNewTab": false
+        },
+        {
+          "link": "",
+          "label": "4",
+          "openInNewTab": false
+        },
+        {
+          "link": "",
+          "label": "5",
+          "openInNewTab": false
         }
       ],
       "openInNewTab": false
@@ -238,8 +258,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-27T15:23:08.903Z",
+  "_generated_at": "2026-05-27T15:33:20.924Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-27T15:23:09.627Z",
-  "_deploy_trigger": "7yl3zl"
+  "_last_deploy": "2026-05-27T15:33:21.507Z",
+  "_deploy_trigger": "9jqn08"
 }
