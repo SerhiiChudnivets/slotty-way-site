@@ -52,6 +52,10 @@ interface CasinoData {
   // Базові поля
   name: string
   html_head?: string
+  seoTitle?: string
+  seo_title?: string
+  seoDescription?: string
+  seo_description?: string
   url: string
   template?: string
   language_code: string
@@ -115,7 +119,7 @@ const styles = `
   }
   
   html, body {
-  overflow-x: hidden;
+  
   width: 100%;
 }
 
@@ -587,7 +591,7 @@ const styles = `
 
   /* Custom Content Section */
   .content-section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: var(--background);
   }
 
@@ -690,7 +694,7 @@ const styles = `
     color: var(--muted-foreground);
   }
   .faq-section {
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
     background: var(--background);
   }
   .faq-section .content-wrapper{
@@ -988,6 +992,7 @@ const styles = `
     overflow-x: auto;
     white-space: nowrap;
     display: block;
+    text-align:left;
   }
   .content-wrapper td, .content-wrapper th {
     width: 1%;
@@ -1012,6 +1017,16 @@ const styles = `
 export default function TupchiyTemplate() {
   const data: CasinoData = require('../data.json')
   const htmlHeadContent = data.html_head || '';
+  const extractMetaDescription = (html: string): string => {
+    if (!html) return ''
+    const descriptionMatch =
+        html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i) ||
+        html.match(/<meta[^>]*content=["']([^"']*)["'][^>]*name=["']description["'][^>]*>/i)
+    return descriptionMatch?.[1]?.trim() || ''
+  }
+  const pageSeoDescription = data.seoDescription || data.seo_description || ''
+  const pageSeoTitle = data.seoTitle || data.seo_title || ''
+  const metaDescription = pageSeoDescription || extractMetaDescription(htmlHeadContent)
 
   // Функція для парсингу htmlHeadContent
   const renderHeadTags = (html: string) => {
@@ -1027,6 +1042,8 @@ export default function TupchiyTemplate() {
       const attributes = Array.from(child.attributes) as Attr[];
 
       if (tagName === 'meta') {
+        const metaName = child.getAttribute('name')?.toLowerCase()
+        if (metaName === 'description') return null
         return <meta key={i} {...Object.fromEntries(attributes.map(a => [a.name, a.value]))} />;
       }
 
@@ -1207,7 +1224,8 @@ export default function TupchiyTemplate() {
   return (
     <>
       <Head>
-        <title>{data.site_name || data.name}</title>
+        <title>{pageSeoTitle || data.site_name || data.name}</title>
+        {metaDescription && <meta name="description" content={metaDescription} />}
         <meta
             name="robots"
             content={data.allow_indexing ? 'index,follow' : 'noindex,nofollow'}

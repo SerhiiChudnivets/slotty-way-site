@@ -17,16 +17,16 @@
       "content": "<h1>Bonusy w Slottyway Casino</h1><p>Slottyway Casino stara się stworzyć użytkownikom jak najbardziej komfortowe warunki do uprawiania hazardu. Na stronie na graczy czekają nie tylko automaty z wysokim RTP. Jednak gracze czekają nie tylko na certyfikowane automaty, ale także na różnorodne bonusy. Polityka bonusowa ma na celu nagradzanie stałych użytkowników i nowicjuszy. Slottyway Casino bonus pozwala zwiększyć rozmiar istniejącego bankrolla.</p><h2>Bonus powitalny</h2><p>Otrzymać swój pierwszy bonus w naszym kasynie gracze mogą już przy rejestracji i pierwszej wpłaty. Nowi gracze otrzymują zachętę w wysokości 100% depozytu do 200 euro. Aby go otrzymać, należy się zarejestrować i dokonać wpłaty w wysokości co najmniej 20 euro. Zachęta przyznawana jest w ratach po 10% aktywowanej kwoty. W promocji obowiązuje zasada obrotu ze współczynnikiem x30, za każde 300 euro zakładów zostanie przyznany prezent w wysokości 10 euro. Okres ważności promocji wynosi 3 dni. Kwota jednego zakładu nie jest ograniczona warunkami promocji.</p><h2>Bonus doładowania</h2><p>Po prezencie powitalnym gracze mogą skorzystać z bonusu doładowania. Jest on oferowany w wysokości 50% depozytu do 100 €. Po rozpoczęciu procesu obstawiania bonus zostanie przelany na konto gracza w ratach wynoszących 10%. Aby otrzymać prezent, należy dokonać wpłaty w wysokości co najmniej 20 euro. Promocja jest ważna przez 3 dni. Bonus reload 50% jest dostępny dla zarejestrowanych graczy co tydzień, począwszy od poniedziałku. Użytkownicy mogą aktywować nagrodę raz w tygodniu.</p><h2>Bonus kryptowalutowy</h2><p>Gracze w Slottyway Casino są zachęcani do korzystania nie tylko ze standardowych systemów płatności, ale także z kryptowalut. Użytkownicy, którzy dokonują transakcji za ich pośrednictwem, mają prawo do specjalnego prezentu - Crypto Bonus za obrót 150 do 100 euro. Promocja ma wymagania dotyczące zakładów z zakładem x30. Na przykład, aby otrzymać bonus, gracz wpłacił równowartość 20 euro. Na jego konto bonusowe wpłynęło 30 euro. W tym przypadku całkowita kwota obrotu wyniesie 900 euro. Po dokonaniu zakładów w wysokości 90 euro na jego konto główne zostanie przelane 10% prezentu (czyli 3 euro).</p><h2>Rakeback z BeeCoins</h2><p>Nasze kasyno posiada system rakeback. Zgodnie z jego warunkami, BeeCoins (punkty programu lojalnościowego) są przyznawane za obroty w grach. Tak więc za obrót w wysokości 100 euro przyznawanych jest 15 BeeCoins. Liczba punktów zależy również od wybranej gry:</p><ul><li><p>za zakłady na automatach przysługuje 100% bonusu, czyli za obrót 100 euro przyznawanych jest 15 BeeCoinów;</p></li><li><p>za zakłady w bakaracie i blackjacku przysługuje 10%;</p></li><li><p>za zakłady w grach z krupierem na żywo - 50% obrotu.</p></li></ul><p></p>",
       "seoTitle": "Slottyway Casino - Bonus [PL] | Slottyway",
       "seoDescription": "Slottyway Casino dąży do stworzenia najbardziej komfortowego środowiska hazardowego dla użytkowników i pozwala zwiększyć rozmiar dostępnego bankrolla.",
-      "htmlHead": "333",
+      "htmlHead": "",
       "gptPrompt": "",
       "heroTitle": "111",
       "heroSubtitle": "222",
       "heroImage": "/uploads/e17574bda4c1bdcf2a8816f8db910364.webp",
-      "template": "landing",
+      "template": "blog",
       "isHomepage": false,
       "order": 0,
       "lang": "pl-PL",
-      "faqTitle": "",
+      "faqTitle": "фаааак",
       "sections": 4444,
       "faq": [
         {
@@ -258,8 +258,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-28T09:41:56.553Z",
+  "_generated_at": "2026-05-28T14:42:27.059Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-28T09:41:57.192Z",
-  "_deploy_trigger": "n0u8n"
+  "_last_deploy": "2026-05-28T14:42:27.717Z",
+  "_deploy_trigger": "eufpvs"
 }

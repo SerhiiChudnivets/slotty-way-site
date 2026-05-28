@@ -28,7 +28,9 @@ interface PageData {
   redirect_404s_to_homepage: boolean
   use_www_version: boolean
   seo_title?: string
+  seoTitle?: string
   seo_description?: string
+  seoDescription?: string
 
 
   // Уніфіковані поля шаблонів
@@ -88,7 +90,9 @@ interface SiteData {
   redirect_404s_to_homepage: boolean
   use_www_version: boolean
   seo_title?: string
+  seoTitle?: string
   seo_description?: string
+  seoDescription?: string
 
   // Уніфіковані поля шаблонів
   site_name?: string
@@ -143,7 +147,7 @@ const styles = `
   }
   
   html, body {
-  overflow-x: hidden;
+  
   width: 100%;
 }
 
@@ -615,7 +619,7 @@ const styles = `
 
   /* Custom Content Section */
   .content-section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: var(--background);
   }
 
@@ -718,7 +722,7 @@ const styles = `
     color: var(--muted-foreground);
   }
   .faq-section {
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
     background: var(--background);
   }
   .faq-section .content-wrapper{
@@ -1053,6 +1057,7 @@ const styles = `
     overflow-x: auto;
     white-space: nowrap;
     display: block;
+    text-align:left;
   }
   .content-wrapper td, .content-wrapper th {
     width: 1%;
@@ -1079,6 +1084,16 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
   const siteName = site.site_name || site.name
   const data: PageData = require('../data.json')
   const htmlHeadContent = page.html_head || '';
+  const extractMetaDescription = (html: string): string => {
+    if (!html) return ''
+    const descriptionMatch =
+        html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i) ||
+        html.match(/<meta[^>]*content=["']([^"']*)["'][^>]*name=["']description["'][^>]*>/i)
+    return descriptionMatch?.[1]?.trim() || ''
+  }
+  const pageSeoDescription = page.seoDescription || page.seo_description || ''
+  const pageSeoTitle = page.seoTitle || page.seo_title || ''
+  const metaDescription = pageSeoDescription || extractMetaDescription(htmlHeadContent)
 
   // Функція для парсингу htmlHeadContent
   const renderHeadTags = (html: string) => {
@@ -1094,6 +1109,8 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
       const attributes = Array.from(child.attributes) as Attr[];
 
       if (tagName === 'meta') {
+        const metaName = child.getAttribute('name')?.toLowerCase()
+        if (metaName === 'description') return null
         return <meta key={i} {...Object.fromEntries(attributes.map(a => [a.name, a.value]))} />;
       }
 
@@ -1192,7 +1209,8 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
   return (
    <>
      <Head>
-       <title>{page.seo_title || data.site_name}</title>
+       <title>{pageSeoTitle || data.seoTitle || data.seo_title || data.site_name}</title>
+       {metaDescription && <meta name="description" content={metaDescription} />}
        <meta name="robots" content={data.allow_indexing ? 'index,follow' : 'noindex,nofollow'} />
        <meta charSet="utf-8" />
        <meta name="viewport" content="width=device-width, initial-scale=1" />
