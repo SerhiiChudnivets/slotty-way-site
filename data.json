@@ -22,7 +22,7 @@
       "heroTitle": "111",
       "heroSubtitle": "222",
       "heroImage": "/uploads/e17574bda4c1bdcf2a8816f8db910364.webp",
-      "template": "blog",
+      "template": "landing",
       "isHomepage": false,
       "order": 0,
       "lang": "pl-PL",
@@ -258,8 +258,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-05-29T11:43:08.588Z",
+  "_generated_at": "2026-05-29T12:39:38.242Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-05-29T11:43:09.209Z",
-  "_deploy_trigger": "5xgism"
+  "_last_deploy": "2026-05-29T12:39:38.916Z",
+  "_deploy_trigger": "m496yd"
 }
