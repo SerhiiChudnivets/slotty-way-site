@@ -36,7 +36,11 @@ interface PageData {
   // Уніфіковані поля шаблонів
   site_name?: string
   hero_title?: string
+  heroTitle?: string
   hero_subtitle?: string
+  heroSubtitle?: string
+  heroImage?: string | MediaFile | MediaFile[] | null
+  hero_image?: string | MediaFile | MediaFile[] | null
   hero_badge?: string
   cta_text?: string
   logo?: { url: string; name?: string } | null
@@ -77,6 +81,7 @@ interface PageData {
   cta_link?: string
   sections?: ContentSection[]
   FAQ?: { id?: number; question: string; answer: string }[]
+  faq?: { id?: number; question: string; answer: string }[]
 }
 
 interface SiteData {
@@ -97,7 +102,11 @@ interface SiteData {
   // Уніфіковані поля шаблонів
   site_name?: string
   hero_title?: string
+  heroTitle?: string
   hero_subtitle?: string
+  heroSubtitle?: string
+  heroImage?: string | MediaFile | MediaFile[] | null
+  hero_image?: string | MediaFile | MediaFile[] | null
   hero_badge?: string
   cta_text?: string
   logo?: { url: string; name?: string } | null
@@ -1142,11 +1151,9 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
   const colorHighlightText = data.color_highlight_text || '#f59e0b'
   const colorMainBtnText = data.color_main_btn_text || 'fff'
 
-
-
-  const heroTitle = page.hero_title || 'Get 200% Bonus'
-  const heroSubtitle = page.hero_subtitle || 'Up to €1,000 + 100 Free Spins'
-  const heroBadge = data.hero_badge || '🎰 Welcome Bonus'
+  const heroTitle = page.heroTitle || page.hero_title || data.heroTitle || data.hero_title || 'Get 200% Bonus'
+  const heroSubtitle = page.heroSubtitle || page.hero_subtitle || data.heroSubtitle || data.hero_subtitle || 'Up to €1,000 + 100 Free Spins'
+  const heroBadge = page.hero_badge || data.hero_badge || '🎰 Welcome Bonus'
   const ctaText = data.cta_text || 'Play Now'
   const [showPopup, setShowPopup] = useState(false)
   const popupText = data.popup_text || '🎁 Welcome Bonus: 100% up to $500 + 200 Free Spins!'
@@ -1158,8 +1165,10 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
   }
   const urlSite = data.url || '/'
   const year = new Date().getFullYear();
-  const faqTitle = page.faq_title
-  const faqs = Array.isArray(page?.FAQ) ? page.FAQ : []
+  const faqTitle = page.faq_title || data.faq_title
+  const pageFaqs = Array.isArray(page?.faq) ? page.faq : Array.isArray(page?.FAQ) ? page.FAQ : []
+  const dataFaqs = Array.isArray(data?.faq) ? data.faq : Array.isArray(data?.FAQ) ? data.FAQ : []
+  const faqs = pageFaqs.length > 0 ? pageFaqs : dataFaqs
   const loginText = data.login_text
   const registerText = data.register_text
   const slotsTitle = data.slots_title
@@ -1204,7 +1213,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
     return ''
   }
 
-  const backgroundImage = getMediaUrl(data.main_background_img);
+  const backgroundImage = getMediaUrl(page.heroImage || page.hero_image || data.heroImage || data.hero_image || data.main_background_img);
 
   return (
    <>
