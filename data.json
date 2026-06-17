@@ -5,7 +5,7 @@
   "url": "slotty-way.site",
   "template": "tupchiy",
   "language_code": "pl-PL",
-  "allow_indexing": false,
+  "allow_indexing": true,
   "redirect_404s_to_homepage": false,
   "use_www_version": false,
   "breadcrumbs": true,
@@ -260,8 +260,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-06-17T16:02:45.021Z",
+  "_generated_at": "2026-06-17T16:20:34.605Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-06-17T16:02:45.555Z",
-  "_deploy_trigger": "s16lt"
+  "_last_deploy": "2026-06-17T16:20:35.151Z",
+  "_deploy_trigger": "9vkjd9"
 }
