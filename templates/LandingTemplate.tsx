@@ -17,6 +17,12 @@ interface ContentSection {
   layout?: string
 }
 
+interface FooterImage {
+  id?: number
+  link?: string
+  image?: string | MediaFile | MediaFile[] | null
+}
+
 interface PageData {
   // Базові поля
   name: string
@@ -27,6 +33,7 @@ interface PageData {
   allow_indexing: boolean
   redirect_404s_to_homepage: boolean
   use_www_version: boolean
+  breadcrumbs?: boolean
   seo_title?: string
   seoTitle?: string
   seo_description?: string
@@ -82,6 +89,8 @@ interface PageData {
   sections?: ContentSection[]
   FAQ?: { id?: number; question: string; answer: string }[]
   faq?: { id?: number; question: string; answer: string }[]
+  footer_images?: FooterImage[]
+  footerImages?: FooterImage[]
 }
 
 interface SiteData {
@@ -94,6 +103,7 @@ interface SiteData {
   allow_indexing: boolean
   redirect_404s_to_homepage: boolean
   use_www_version: boolean
+  breadcrumbs?: boolean
   seo_title?: string
   seoTitle?: string
   seo_description?: string
@@ -347,6 +357,37 @@ const styles = `
 
 
   /* Hero Banner Styles */
+  .breadcrumbs-section {
+    background: var(--background);
+    color: var(--foreground);
+    padding: 1rem 0 0;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--foreground);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .breadcrumbs a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .breadcrumbs a:hover {
+    color: color-mix(in srgb, var(--primary) 82%, #000);
+  }
+
+  .breadcrumbs-separator,
+  .breadcrumbs-current {
+    color: var(--foreground);
+  }
+
   .hero-section {
     position: relative;
     width: 100%;
@@ -833,6 +874,7 @@ const styles = `
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .cert-item {
@@ -841,6 +883,24 @@ const styles = `
     gap: 0.5rem;
     color: var(--muted-foreground);
     font-size: 0.875rem;
+  }
+
+  .footer-certification-link {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .footer-certification-link:hover {
+    opacity: 0.8;
+  }
+
+  .footer-certification-image {
+    display: block;
+    max-width: 160px;
+    max-height: 42px;
+    object-fit: contain;
   }
 
   .age-badge {
@@ -1175,6 +1235,22 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
   const bonusTitle = data.bonus_title
   const getBonusBtn = data.get_bonus_btn_text || 'Get Bonus'
   const redirectLink = data.redirect_link || ''
+  const showBreadcrumbs = data.breadcrumbs === true
+  const formatBreadcrumbTitle = () => {
+    const fallback = page.slug
+        ? page.slug.replace(/^\/|\/$/g, '').replace(/[-_]+/g, ' ')
+        : page.hero_title || siteName
+    let title = page.title || page.hero_title || fallback
+    const prefixes = [siteName, data.site_name, data.name, data.url].filter(Boolean) as string[]
+
+    prefixes.forEach((prefix) => {
+      const escapedPrefix = prefix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      title = title.replace(new RegExp(`^${escapedPrefix}[\\s\\-:|]+`, 'i'), '')
+    })
+
+    return title.trim() || fallback
+  }
+  const currentPageTitle = formatBreadcrumbTitle()
   // Генеруємо динамічні стилі з кольорами
   const dynamicStyles = `
     :root {
@@ -1212,6 +1288,12 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
     if (typeof media === 'object' && 'url' in media) return media.url || ''
     return ''
   }
+  const footerImages = (Array.isArray(data.footer_images) ? data.footer_images : data.footerImages || [])
+      .map((item) => ({
+        ...item,
+        imageUrl: getMediaUrl(item.image || undefined),
+      }))
+      .filter((item) => item.imageUrl)
 
   const backgroundImage = getMediaUrl(page.heroImage || page.hero_image || data.heroImage || data.hero_image || data.main_background_img);
 
@@ -1311,6 +1393,18 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
         </div>
         </nav>
       </header>
+
+      {showBreadcrumbs && (
+          <section className="breadcrumbs-section" aria-label="Breadcrumb">
+            <div className="container">
+              <nav className="breadcrumbs">
+                <a href="/">Home</a>
+                <span className="breadcrumbs-separator">{'\u00bb'}</span>
+                <span className="breadcrumbs-current">{currentPageTitle}</span>
+              </nav>
+            </div>
+          </section>
+      )}
 
       {/* Hero Banner */}
       <section
@@ -1435,13 +1529,31 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
               </div>
 
               <div className="footer-certifications">
-                <div className="cert-item">
-                  <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                  <span>FairPlay</span>
-                </div>
-                <div className="age-badge">18+</div>
+                {footerImages.length > 0 ? (
+                    footerImages.map((item, index) => (
+                        <a
+                            key={item.id || index}
+                            href={item.link || '#'}
+                            className="footer-certification-link"
+                        >
+                          <img
+                              src={item.imageUrl}
+                              alt={`Footer certification ${index + 1}`}
+                              className="footer-certification-image"
+                          />
+                        </a>
+                    ))
+                ) : (
+                    <>
+                      <div className="cert-item">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <span>FairPlay</span>
+                      </div>
+                      <div className="age-badge">18+</div>
+                    </>
+                )}
               </div>
 
               <div className="footer-links">
