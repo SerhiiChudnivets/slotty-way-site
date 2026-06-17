@@ -98,7 +98,7 @@
   "slots_title": "Gry dostępne w Slottyway Kasyno",
   "bonus_title": "Slottyway bonusy i promocje",
   "get_bonus_btn_text": "Odbierz bonus",
-  "redirect_link": "",
+  "redirect_link": "/play/",
   "subdomains": "pl",
   "accent_color": "#d4af37",
   "main_background": "#0d1016",
@@ -260,8 +260,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-06-17T16:24:37.310Z",
+  "_generated_at": "2026-06-17T16:31:03.626Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-06-17T16:24:37.873Z",
-  "_deploy_trigger": "sdi3ci"
+  "_last_deploy": "2026-06-17T16:31:04.189Z",
+  "_deploy_trigger": "9zgkiu"
 }
