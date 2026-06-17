@@ -20,9 +20,9 @@
       "seoDescription": "Slottyway Casino dąży do stworzenia najbardziej komfortowego środowiska hazardowego dla użytkowników i pozwala zwiększyć rozmiar dostępnego bankrolla.",
       "htmlHead": "",
       "gptPrompt": "",
-      "heroTitle": "",
-      "heroSubtitle": "",
-      "heroImage": null,
+      "heroTitle": "упупув",
+      "heroSubtitle": "grgged",
+      "heroImage": "/uploads/e17574bda4c1bdcf2a8816f8db910364.webp",
       "template": "landing",
       "isHomepage": false,
       "order": 0,
@@ -260,8 +260,8 @@
       "question": "Czy mogę używać kryptowalut w Slottyway Casino?"
     }
   ],
-  "_generated_at": "2026-06-17T15:33:50.555Z",
+  "_generated_at": "2026-06-17T15:49:47.995Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-06-17T15:33:51.179Z",
-  "_deploy_trigger": "psgcw"
+  "_last_deploy": "2026-06-17T15:49:48.564Z",
+  "_deploy_trigger": "sx01gc"
 }
